@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#2673F3"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="143dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/tmonmonsori"
+                android:gravity="center"
+                android:textColor="#FCFCFC"
+                android:theme="@style/SpinnerTheme">
+
+            </Spinner>
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="검색어를 입력하세요."
+                android:textColor="#000000" />
+            <ImageView
+                android:id="@+id/search_img"
+                android:layout_width="30dp"
+                android:layout_height="23dp"
+                android:layout_margin="10dp"
+                android:layout_weight="5"
+                android:tint="#F5F6F8"
+                android:src="@drawable/search" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:textColor="#717585"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tmonmonsori"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="전체 피해 사례 수"
+            android:textSize="20sp"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="#F3F4F5"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/report_count"
+                android:layout_width="387dp"
+                android:layout_height="54dp"
+                android:text="0건"
+                android:textColor="@color/mainColor"
+                android:fontFamily="@font/tmonmonsori"
+                android:gravity="center"
+                android:textSize="20sp"
+                />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

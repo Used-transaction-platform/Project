@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberInfoFragment"
+    android:background="#F5F5F5">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/member_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="buyer"
+                android:fontFamily="@font/tmonmonsori"
+                android:textColor="#01030E"
+                android:textSize="30dp" />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#E9EFF5"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="174dp"
+                            android:layout_height="46dp"
+                            android:backgroundTint="@color/mainColor"
+                            android:gravity="center"
+                            android:text="누적신고 횟수"
+                            android:textColor="#1B1A1A" />
+
+                        <TextView
+                            android:id="@+id/report_count"
+                            android:layout_width="39dp"
+                            android:layout_height="32dp"
+                            android:gravity="left"
+                            android:text="0"
+                            android:textColor="#1B1A1A" />
+                        <TextView
+                            android:id="@+id/text"
+                            android:layout_width="39dp"
+                            android:layout_height="32dp"
+                            android:gravity="left"
+                            android:text="회"
+                            android:textColor="#1B1A1A" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="174dp"
+                            android:layout_height="46dp"
+                            android:backgroundTint="@color/mainColor"
+                            android:gravity="center"
+                            android:text="사용자 계정"
+                            android:textColor="#1B1A1A" />
+
+                        <TextView
+                            android:id="@+id/account"
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:gravity="left"
+                            android:text="0x7af4d4eb89105d3fb0659264c6538799e112c7f9"
+                            android:textColor="#1B1A1A" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#1B1A1A"
+                android:gravity="center"
+                android:text="거래내역" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#1B1A1A" />
+
+            <!--거래내역 마이페이지와 동일한 테이블 구성-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#DCDFE2"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true">
+                <!--여기안에 테이블 구성~~-->
+                <TableLayout
+                    android:id="@+id/buy_history_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CBE7EB">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:gravity="center"
+                            android:text="날짜"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="1dp"
+                            android:gravity="center"
+                            android:text="제품명"
+                            android:textColor="#000000" />
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="1dp"
+                            android:gravity="center"
+                            android:text="상태"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    <!--<TableRow-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_marginLeft="1dp"-->
+                            <!--android:layout_marginBottom="1dp"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="2019-08-19"-->
+                            <!--android:textColor="#000000" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_marginLeft="20dp"-->
+                            <!--android:layout_marginBottom="1dp"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="TestBook"-->
+                            <!--android:textColor="#000000" />-->
+                        <!--<TextView-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_marginLeft="20dp"-->
+                            <!--android:layout_marginBottom="1dp"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="신고 처리"-->
+                            <!--android:textColor="#000000" />-->
+                    <!--</TableRow>-->
+                </TableLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

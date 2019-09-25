@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPageFragment">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#F3F4F5"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="주소"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/eth_account_txt"
+                    android:layout_width="278dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="0x1415861...."
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Coin"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/eth_balance_txt"
+                    android:layout_width="282dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="56000"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/mainColor"
+        android:fontFamily="@font/tmonmonsori"
+        android:text="코인 충전내역" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="#F3F4F5"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true">
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="날짜"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="133dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="충전금액"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="83dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="잔액"
+                    android:textColor="#000000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="2019/07/28"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:gravity="center"
+                    android:text="10Eth"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:gravity="center"
+                    android:text="10Eth"
+                    android:textColor="#000000"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="2019/07/29"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:gravity="center"
+                    android:text="10Eth"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:gravity="center"
+                    android:text="20Eth"
+                    android:textColor="#000000"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/add_coin_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_corner"
+            android:fontFamily="@font/tmonmonsori"
+            android:backgroundTint="@color/mainColor"
+            android:text="코인 충전"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/tmonmonsori"
+        android:text="구매내역조회"
+        android:textColor="@color/mainColor" />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:scrollbars="vertical"
+        app:cardBackgroundColor="#F3F4F5"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:scrollbars="vertical"
+            android:layout_weight="1">
+            <TableLayout
+                android:id="@+id/buy_history_table"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#CBE7EB">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:gravity="center"
+                        android:text="날짜"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="1dp"
+                        android:gravity="center"
+                        android:text="제품명"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="1dp"
+                        android:gravity="center"
+                        android:text="상태"
+                        android:textColor="#000000" />
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bt_corner"
+        android:backgroundTint="@color/mainColor"
+        android:fontFamily="@font/tmonmonsori"
+        android:text="로그아웃"
+        android:textColor="@color/white" />
+
+</LinearLayout>
